@@ -96,3 +96,23 @@ N_estimators = 100
 Learning Rate = 0.1
 ![](images/Automl_best_model.png)
 
+### About the model : LightGBM Classifier
+LightGBM is a gradient boosting framework that uses tree based learning algorithms. It is designed to be distributed and efficient with the following advantages:
+
+Faster training speed and higher efficiency.
+
+Lower memory usage.
+
+Better accuracy.
+
+Support of parallel and GPU learning.
+
+Capable of handling large-scale data.
+
+### Hyper parameter recommended :
+
+-	**n_estimators** at 100 is a optimal range of estimators for the dataset configurations ,   since Light GBM is a tree based model , n_estimators act as number of trees of ensemble model which have help us to reduce overfit while model training
+-	**Learning Rate** at 0.1 , is optimal and not too low for the model training process
+-	**num_leaves** which signifies the max number of leaves in one tree is recommended at 31. 
+
+
