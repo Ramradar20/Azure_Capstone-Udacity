@@ -192,6 +192,12 @@ The Deployed Model End Point is consumed using POST call with data instance in J
 Deployed Model view in Azure Ml Studio
 ![](images/deployed_model_healthy.png)
 
+# How to Improve the Project in Future 
+
+- Improvement can be made by utilizing the Configurations parameters in AutoML and Hyperdrive. This can help us to identify the best parameters for the model.
+- Other than this, model types and high performing model such as XGBoost or CATBoost can be used for experiments
+- Bayesian sampling method can be utilized instead of Random Sampling methods 
+ 
 
 # Screen Recording
 
