@@ -71,3 +71,28 @@ https://www.unsw.adfa.edu.au/unsw-canberra-cyber/cybersecurity/ADFA-NB15-Dataset
 Screenshot below
 ![](images/dataset.PNG)
 
+# Automated ML
+
+## Overview
+
+As part of autoMl Experiment , we expect the autoML framework to recommend the best model for the task and the dataset provided. 
+AutoConfiq setup is provided. Where the task is set as Classification , as shown below
+![](images/autoML_config.png)
+
+And the experiment is submitted.
+
+## Results
+
+
+AutoML has recommended model with higher accuracy compared to the HyperDrive Experiments. 
+Model Identified : 
+After the completion of  experiments, AutoML has shown better performance with Balanced Accuracy of close to 99 % 
+
+Model identified by the AutoML – Light GBM Classifier
+
+Important Parameters:
+
+N_estimators = 100
+Learning Rate = 0.1
+![](images/Automl_best_model.png)
+
