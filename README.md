@@ -5,7 +5,7 @@ As part of this project, Model Experiments are performed using both HyperDrive a
 
 - The Deployed Model End Point is consumed using POST call with data instance in JSON format. The display of score based on the data will signifies the successful deployment of the model for consumption. 
 
-Project Set Up and Installation
+# Project Set Up and Installation
 
 ### HyperDrive Setup:
 
@@ -33,3 +33,31 @@ As part of the deployment , the best model from AutoMl is identified and deploye
 ![](images/deployed_model_healthy.png)
 
 **In this Screen shot , we can observe that the best model is deployed successfully and the deployment status is “Healthy”**
+
+
+# Dataset
+
+## Overview
+
+The raw network packets of the UNSW-NB 15 data set is created by the IXIA PerfectStorm tool in the Cyber Range Lab of the Australian Centre for Cyber Security (ACCS) for generating a hybrid of real modern normal activities and synthetic contemporary attack behaviours.
+
+Tcpdump tool is utilised to capture 100 GB of the raw traffic (e.g., Pcap files).
+
+Source of Dataset – [UNSW-NB 15 data set]( https://www.unsw.adfa.edu.au/unsw-canberra-cyber/cybersecurity/ADFA-NB15-Datasets/a%20part%20of%20training%20and%20testing%20set/UNSW_NB15_training-set.csv)
+
+In this dataset , we can find various online transaction signatures. These features can be used to identify whether a transaction is a fraudulent transaction or Normal Transaction 
+
+## Task
+
+We will be using machine learning models to classify whether a transaction is a Normal Transaction or Fraudulent transactions
+
+**Task**- Classification problem as we are classifying based on features into Normal or Fraudulent Transaction 
+
+There are more than 45 features as part of the dataset, which has wide range of information of network transformation and attack classifications. 
+
+Feature Descriptions are provided in the link below,
+
+
+https://www.unsw.adfa.edu.au/unsw-canberra-cyber/cybersecurity/ADFA-NB15-Datasets/NUSW-NB15_features.csv
+
+Target – “label” with values as 1 – for Fraudulent Transaction and 0 – for Normal Transaction is used as Target
