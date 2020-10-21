@@ -61,3 +61,13 @@ Feature Descriptions are provided in the link below,
 https://www.unsw.adfa.edu.au/unsw-canberra-cyber/cybersecurity/ADFA-NB15-Datasets/NUSW-NB15_features.csv
 
 Target – “label” with values as 1 – for Fraudulent Transaction and 0 – for Normal Transaction is used as Target
+
+## Access 
+
+The data is access using the following URL
+https://www.unsw.adfa.edu.au/unsw-canberra-cyber/cybersecurity/ADFA-NB15-Datasets/a%20part%20of%20training%20and%20testing%20set/UNSW_NB15_training-set.csv
+
+### TabularDatasetFactory Azure API is used to fetch the data directly from the URL and stored it in Azure environment
+Screenshot below
+![](images/dataset.PNG)
+
