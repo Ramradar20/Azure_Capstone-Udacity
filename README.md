@@ -167,3 +167,28 @@ The number of trees in the forest. This parameter will help us to train the mode
 ### Hyper Drive best model is registered
 ![](images/hyper_best_model_register.png)
 
+
+# Model Deployment
+From the experiements , we can clearly observe that AutoMl has recommened the best model.
+Therefore , Best model from the AutoML experiment is deployed by following procedure
+
+-	Best model from AutoML is registered
+
+![](images/automl_best_modelregister.png)
+
+-	Score.py file is configured. This file is important for initializing the registered model with the path and using it to run predictions
+
+![](images/automl_score_py.png)
+
+-	Necessary configurations such as Environment details are provided along with Inference config , where we need to provide entry script and environment
+-	Micro service setup is provided
+
+![](images/automl_inf_config.png)
+
+### Consumption of the model 
+The Deployed Model End Point is consumed using POST call with data instance in JSON format. The display of score based on the data will signifies the successful deployment of the model for consumption.
+![](images/consuming_model.png)
+
+Deployed Model view in Azure Ml Studio
+![](images/deployed_model_healthy.png)
+
