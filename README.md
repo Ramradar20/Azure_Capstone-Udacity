@@ -192,3 +192,9 @@ The Deployed Model End Point is consumed using POST call with data instance in J
 Deployed Model view in Azure Ml Studio
 ![](images/deployed_model_healthy.png)
 
+
+# Screen Recording
+
+Link to Screen Cast 
+
+https://www.youtube.com/watch?v=RQU6pTzhXog
