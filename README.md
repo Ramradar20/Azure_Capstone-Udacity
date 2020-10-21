@@ -124,3 +124,46 @@ Below are the Run Widget screens shots of the AutoMl experiments ,
 ![](images/automl_run_widget.png)
 
 ![](images/automl_runwidget2.png)
+
+
+# Hyperparameter Tuning – HyperDrive
+
+As part of HyperDrive model experiments , Random Forest Classifier model from Scikit learn package is used for Hyper parameter fine tuning
+
+-	Random Forest is a tree based model , is best suited for dataset with wide number of features. 
+-	Since it is ensemble model , it can help us to reduce model bias and variance and the experiment is conducted to identify the optimal values for two important Hyper Parameters
+
+N_estimator : The number of trees in the forest. This parameter will help us to train the model better and is based on number of features (approximate) 
+
+Range is set as 60 , 70 , 100 , so that a optimal n_estimator is recommended by the Random Sampling method
+
+Max_depth - The maximum depth of the tree. If None, then nodes are expanded until all leaves are pure or until all leaves contain less than min_samples_split samples.
+
+As a accepted rule optimal range lies between 5 to 7 , there is the range for experiment is set as 5  , 6, 7 
+Random Sampling method is selected because of reducing the time taken for identifying the best hyper parameter. This method also has best time to performance ratio compared to Grid Search method. can also help us to experiment with different Hyper Parameters
+Early Stopping Policy
+Bandit Policy: Objective for selecting this Policy is to avoid unwanted iterations in the experiments when a best param is identified. Bandit policy is based on slack factor/slack amount and evaluation interval. Bandit terminates runs where the primary metric is not within the specified slack factor/slack amount compared to the best performing run.
+
+
+## Results
+
+The performance of the HyperDrive model is good and recommend Hyper paramters which provide a accuracy close to 97%.
+
+![](images/run_widget_hyper_2.png)
+
+![](images/run_widget_hyper3.png)
+
+Best Param recommendations
+**['--max_depth', '5', '--n_estimators', '60']**
+
+Max_depth – is at 5
+
+The maximum depth of the tree. If None, then nodes are expanded until all leaves are pure or until all leaves contain less than min_samples_split samples.
+
+N_estimator – 60
+The number of trees in the forest. This parameter will help us to train the model better and is based on number of features (approximate)
+
+
+### Hyper Drive best model is registered
+![](images/hyper_best_model_register.png)
+
