@@ -85,7 +85,10 @@ And the experiment is submitted.
 
 
 AutoML has recommended model with higher accuracy compared to the HyperDrive Experiments. 
-Model Identified : 
+
+![](images/automl_Exp_results.png)
+
+### Model Identified : 
 After the completion of  experiments, AutoML has shown better performance with Balanced Accuracy of close to 99 % 
 
 Model identified by the AutoML – Light GBM Classifier
@@ -116,3 +119,8 @@ Capable of handling large-scale data.
 -	**num_leaves** which signifies the max number of leaves in one tree is recommended at 31. 
 
 
+## Experiment results – AutoML Run Widget
+Below are the Run Widget screens shots of the AutoMl experiments ,
+![](images/automl_run_widget.png)
+
+![](images/automl_runwidget2.png)
