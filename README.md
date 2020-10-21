@@ -1,4 +1,3 @@
-# Azure_Capstone-Udacity
 
 # Azure – Capstone – Deploy the Best Model 
 
