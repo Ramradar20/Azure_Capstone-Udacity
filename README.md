@@ -26,10 +26,10 @@ As part of the deployment , the best model from AutoMl is identified and deploye
 -	Micro service setup
 -	Model deployment 
 
-![](images/ automl_inf_config.png)
+![](images/automl_inf_config.png)
 
 ### Status will be provided based on deployment of the model , we can also check that in the Azure Ml Studio to check the deployment 
 
-![](images/ deployed_model_healthy.png)
+![](images/deployed_model_healthy.png)
 
 **In this Screen shot , we can observe that the best model is deployed successfully and the deployment status is “Healthy”**
