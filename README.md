@@ -77,6 +77,38 @@ Screenshot below
 
 As part of autoMl Experiment , we expect the autoML framework to recommend the best model for the task and the dataset provided. 
 AutoConfiq setup is provided. Where the task is set as Classification , as shown below
+
+
+## AutoMl Configurations used in the experiments
+
+ **task= 'classification'**
+ 
+ Our Main objective is to classify the target inot fraduelent or Normal Transactions. Therefore the task is set as "Classification"
+ 
+ **primary_metric= "AUC_weighted"**
+ 
+ The metric that Automated Machine Learning will optimize for model selection.
+ 
+ Since our experiment task is Classification , we need to choose the metric that can help us to understand the performance of the model
+ 
+AUC_weighted (Weighted Area Under the Receiver Operating Characteristic Curve ) is a standard metric which is used to evalauting ML Classification task. Compute Area Under the Receiver Operating Characteristic Curve (ROC AUC) from prediction scores.
+
+**training_data= trainData**
+The training data to be used within the experiment. It should contain both training features and a label column. "trainData" is the dataset provided in experiments
+
+**label_column_name= 'label'**
+
+The name of the label or target column in the dataset. Since this is Supervised ML task , we need to provide Target variable. In the dataset , we have the target column name as 'label; which has class as 1- for Fradulent and 0 - Normal Transaction
+
+**n_cross_validations= 2**
+
+How many cross validations to perform when user validation data is not specified. Cross valdiation is an important step to make the model robust. Cross-validation is a resampling procedure used to evaluate machine learning models on a limited data sample , here we have set it as 2.
+
+**experiment_timeout_minutes=15**
+
+Maximum amount of time in minutes that all iterations combined can take before the experiment terminates. Here 15 minutes is provided for it.
+ 
+
 ![](images/autoML_config.png)
 
 And the experiment is submitted.
