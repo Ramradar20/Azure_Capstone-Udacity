@@ -106,7 +106,7 @@ How many cross validations to perform when user validation data is not specified
 
 **experiment_timeout_minutes=15**
 
-Maximum amount of time in minutes that all iterations combined can take before the experiment terminates. Here 15 minutes is provided for it to not to extend the experiemnt for longer time as the best model can be achived in less number of iteratiosn. 
+Maximum amount of time in minutes that all iterations combined can take before the experiment terminates. Here 15 minutes is provided for it to not to extend the experiemnt for longer time as the best model can be achived in less number of iterations. 
  
 
 ![](images/autoML_config.png)
