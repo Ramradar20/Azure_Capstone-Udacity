@@ -102,11 +102,11 @@ The name of the label or target column in the dataset. Since this is Supervised 
 
 **n_cross_validations= 2**
 
-How many cross validations to perform when user validation data is not specified. Cross valdiation is an important step to make the model robust. Cross-validation is a resampling procedure used to evaluate machine learning models on a limited data sample , here we have set it as 2.
+How many cross validations to perform when user validation data is not specified. Cross valdiation is an important step to make the model robust. Cross-validation is a resampling procedure used to evaluate machine learning models on a limited data sample , here it is set as 2 , since the dataset is already random split , have it less will help the autoML to experiemnt on more number of models 
 
 **experiment_timeout_minutes=15**
 
-Maximum amount of time in minutes that all iterations combined can take before the experiment terminates. Here 15 minutes is provided for it.
+Maximum amount of time in minutes that all iterations combined can take before the experiment terminates. Here 15 minutes is provided for it to not to extend the experiemnt for longer time as the best model can be achived in less number of iteratiosn. 
  
 
 ![](images/autoML_config.png)
